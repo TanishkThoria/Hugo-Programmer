@@ -21,10 +21,10 @@
               getTheme = getTheme == null ? '{{$.Site.Params.utterances.theme}}' : getTheme;
               
               if (getTheme === "dark") {
-                document.getElementById("custom{{ .name }}SocialFooter").innerHTML = '<img src="{{ .footer-imageSrc-darkMode }}" alt="{{ .name }} link" style="width:{{ .footer-imgWidth }}px;height:{{ .footer-imgHeight }}px">' ;
+                document.getElementById("custom{{ .name }}SocialFooter").innerHTML = '<img src="{{ .footerImageSrcDarkMode }}" alt="{{ .name }} link" style="width:{{ .footerImgWidth }}px;height:{{ .footerImgHeight }}px">' ;
 
               } else {
-                document.getElementById("custom{{ .name }}SocialFooter").innerHTML = '<img src="{{ .footer-imageSrc-lightMode }}" alt="{{ .name }} link" style="width:{{ .footer-imgWidth }}px;height:{{ .footer-imgHeight }}px">' ;
+                document.getElementById("custom{{ .name }}SocialFooter").innerHTML = '<img src="{{ .footerImageSrcLightMode }}" alt="{{ .name }} link" style="width:{{ .footerImgWidth }}px;height:{{ .footerImgHeight }}px">' ;
               }
             	     
             </script>  
