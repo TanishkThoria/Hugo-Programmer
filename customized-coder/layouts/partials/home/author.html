@@ -1,0 +1,23 @@
+<h1>{{ .Site.Params.author }}</h1>
+
+<!--
+<h1 id="getTheme"></h1>
+<h1 id="theme"></h1>
+
+<script>
+    let getTheme = window.localStorage && window.localStorage.getItem("colorscheme");
+  
+    getTheme = getTheme == null ? '{{$.Site.Params.utterances.theme}}' : getTheme;
+    
+    let theme = getTheme === 'dark' ? 'github-dark' : 'github-light';
+    
+    document.getElementById("getTheme").innerHTML = getTheme;
+    document.getElementById("theme").innerHTML = theme;
+</script>
+-->
+
+{{ if reflect.IsSlice .Site.Params.info }}
+<h2>{{ range .Site.Params.info }}{{ . | markdownify }}<br>{{ end}}</h2>
+{{ else }}
+<h2>{{ .Site.Params.info | markdownify }} </h2>
+{{ end }}

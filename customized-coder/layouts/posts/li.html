@@ -1,0 +1,25 @@
+<li>
+
+  <div>  
+    <span class="date">{{ .Date | time.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}</span>        
+    <a class="title" href="{{ .Params.externalLink | default .RelPermalink }}">{{ .Title }}</a>
+ 
+    <hr>
+
+    <span> {{ with .Params.categories }}{{ partial "taxonomy/categories.html" .}}{{ end }} </span>	
+    
+    {{ if .Params.image }}
+      <img src="{{ .Params.imageSrc }}" alt="Article image" style="width:{{ .Params.imageWidth }}px; height:{{ .Params.imageHeight }}px">
+      <vr>
+      <p> {{ .Description }} </p>
+    
+    {{ else }}
+      <p> {{ .Description }} </p>
+      
+    {{ end }}
+
+    <br>
+
+  </div>
+
+</li>
