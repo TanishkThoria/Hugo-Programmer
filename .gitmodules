@@ -1,3 +1,3 @@
-[submodule "/home/tanishk/websiteProject/Hugo-Programmer/Hugo-Programmer/exampleSite"]
-	path = /home/tanishk/websiteProject/Hugo-Programmer/Hugo-Programmer/exampleSite
+[submodule "/exampleSite"]
+	path = /exampleSite
 	url = https://github.com/TanishkThoria/Personal-Website.git

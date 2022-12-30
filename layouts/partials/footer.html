@@ -11,20 +11,20 @@
 	      <a href="{{ .url | safeURL }}" aria-label="{{ .name }}" {{ if .rel }}rel="{{ .rel }}"{{ end }} {{ if .target }}target="{{ .target }}"{{ end }}>{{ .name }}</a>
 	  {{ end }}
 
-	  {{ if .replit }}
+	  {{ if .customImg }}
 
             <a> &#8239;</a> 
-	    <a id="replit-footer" href="https://replit.com/@tanishkthoria"></a>
+	    <a id="custom-{{ .name }}-social-footer" href="{{ .url }}"></a>
 
             <script>
               getTheme = window.localStorage && window.localStorage.getItem("colorscheme");
               getTheme = getTheme == null ? '{{$.Site.Params.utterances.theme}}' : getTheme;
               
               if (getTheme === "dark") {
-                document.getElementById("replit-footer").innerHTML = '<img src="https://tanishkthoria.netlify.app/images/replitLogoMinimalBlue.png" alt="Replit logo" style="width:12.04px;height:14px">' ;
+                document.getElementById("custom-social-footer").innerHTML = '<img src="{{ .footer-imageSrc-darkMode }}" alt="{{ .name }} link" style="width:{{ .footer-imgWidth }}px;height:{{ .footer-imgHeight }}px">' ;
 
               } else {
-                document.getElementById("replit-footer").innerHTML = '<img src="https://tanishkthoria.netlify.app/images/replitLogoMinimalBlueLightMode.png" alt="Replit logo" style="width:12.04px;height:14px">' ;
+                document.getElementById("custom-social-footer").innerHTML = '<img src="{{ .footer-imageSrc-lightMode }}" alt="{{ .name }} link" style="width:{{ .footer-imgWidth }}px;height:{{ .footer-imgHeight }}px">' ;
               }
             	     
             </script>  
@@ -48,7 +48,7 @@
       {{ i18n "licensed_under" }} {{ .Site.Params.license | safeHTML }}
     ·
     {{ end }}
-    {{ i18n "powered_by" }} <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    {{ i18n "powered_by" }} <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/TanishkThoria/Hugo-Programmer">Programmer</a>.
     {{ if (and .Site.Params.commit .GitInfo) }}
       [<a href="{{ .Site.Params.commit }}/{{ .GitInfo.Hash }}">{{ .GitInfo.AbbreviatedHash }}</a>]
     {{ end }}

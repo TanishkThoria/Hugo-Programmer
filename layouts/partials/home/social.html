@@ -13,9 +13,9 @@
       </li>
     {{ end }}
 
-    {{ if .replit }}     
+    {{ if .customImg }}     
       <li>
-        <a id="replit" href="https://replit.com/@tanishkthoria"> </a>
+        <a id="custom-{{ .name }}-social" href="{{ .url }}"> </a>
       </li> 
           
       <script>
@@ -24,10 +24,10 @@
         getTheme = getTheme == null ? '{{$.Site.Params.utterances.theme}}' : getTheme;
               
         if (getTheme === "dark") {
-          document.getElementById("replit").innerHTML = '<img src="https://tanishkthoria.netlify.app/images/replitLogoMinimalV2.png" alt="Replit logo" style="width:20.64px;height:24px">' ;
+          document.getElementById("custom-{{ .name }}-social").innerHTML = '<img src="{{ .imageSrc-darkMode }}" alt="{{ .name }} logo" style="width:{{ .imgWidth }}px;height:{{ .imgHeight }}px">' ;
 
         } else {
-          document.getElementById("replit").innerHTML = '<img src="https://tanishkthoria.netlify.app/images/replitLogoMinimalLightMode.png" alt="Replit logo" style="width:20.64px;height:24px">' ;
+          document.getElementById("custom-{{ .name }}-social").innerHTML = '<img src="{{ .imageSrc-lightMode }}" alt="{{ .name }} logo" style="width:{{ .imgWidth }}px;height:{{ .imgHeight }}px">' ;
         }
                 
       </script>
