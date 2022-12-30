@@ -21,7 +21,7 @@
               getTheme = getTheme == null ? '{{$.Site.Params.utterances.theme}}' : getTheme;
               
               if (getTheme == "dark") {
-                document.getElementById("custom{{ .name }}SocialFooter").innerHTML = '<img src="{{ .footerImgSrcDarkMode }}" alt="{{ .name }} link" style="width:{{ .footerImgWidth }}px;height:{{ .footerImgHeight }}px">' ;
+                document.getElementById("custom{{ .name }}SocialFooter").innerHTML = '<img src={{ .footerImgSrcDarkMode }} alt="{{ .name }} link" style="width:{{ .footerImgWidth }}px;height:{{ .footerImgHeight }}px">' ;
 
               } else {
                 document.getElementById("custom{{ .name }}SocialFooter").innerHTML = '<img src="{{ .footerImgSrcLightMode }}" alt="{{ .name }} link" style="width:{{ .footerImgWidth }}px;height:{{ .footerImgHeight }}px">' ;
