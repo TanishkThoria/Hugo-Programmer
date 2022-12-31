@@ -5,7 +5,7 @@
         {{ range sort . "weight" }}
           {{ if .icon }}
               <a href="{{ .url | safeURL }}" aria-label="{{ .name }}" {{ if .rel }}rel="{{ .rel }}"{{ end }} {{ if .target }}target="{{ .target }}"{{ end }} {{ if .type }}type="{{ .type }}"{{ end }}>
-                <i class="fa fa-xs fa-{{ .name | lower }}" aria-hidden="true"></i>
+                <i class="fa fa-2xs fa-{{ .name | lower }}" aria-hidden="true"></i>
               </a>
 	  {{ else }}
 	      <!-- <a href="{{ .url | safeURL }}" aria-label="{{ .name }}" {{ if .rel }}rel="{{ .rel }}"{{ end }} {{ if .target }}target="{{ .target }}"{{ end }}>{{ .name }}</a> -->
