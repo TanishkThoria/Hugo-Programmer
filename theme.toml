@@ -2,7 +2,7 @@ name = "Programmer"
 license = "MIT"
 licenselink = "https://github.com/TanishkThoria/Hugo-Programmer/blob/main/LICENSE"
 description = "A modified version of the minimal and sleek 'Hugo-Coder' theme."
-homepage = "https://github.com/luizdepra/hugo-coder/"
+homepage = "https://github.com/TanishkThoria/Hugo-Programmer"
 tags = [
   "blog",
   "minimal",
@@ -19,10 +19,16 @@ features = [
   "multilingual",
   "pagination",
   "single-column",
-  "syntax-highlighting"
+  "syntax-highlighting",
+  "thumbnails"
 ]
 min_version = "0.79.0"
 
 [author]
 name = "Tanishk Thoria"
 homepage = "https://tanishkthoria.netlify.app"
+
+[original]
+name = "Luiz F. A. de Prá"
+homepage = "https://luizdepra.com"
+repo = "https://github.com/luizdepra/hugo-coder"
