@@ -16,21 +16,19 @@ If you like what you see or are looking for what to do next, you can find the [`
 <br/>
 
 2) Edit your ```config.toml``` file to match the new theme. You can do this by:
-<br/>
+
   - Simply adding  ```theme = "Hugo-Programmer"``` at the top of the file and then adding other parameters seperately.
 
-<br/>
   - Or by copying this [baseline configuration]() and filling it out.
     **This is the recommended option due to it having the most reability**
 
-<br/>
   - Or by copying and editing the [example website](https://github.com/TanishkThoria/Personal-Website/blob/main/config.toml).
     *Note that some of the images in the example website may not load properly in your website due to them being relative links.*
     *This could be fixed by either locally downloading the same images or adding*
     ```https://tanishkthoria.netlify.app/```
     *in front of all relative links.*
 
-<br/>
+
 3) You should be good to go! To display the current version of the website *including drafts**, execute the following command:
   ```
   hugo server -D
@@ -42,6 +40,7 @@ If you like what you see or are looking for what to do next, you can find the [`
   *drafts of blog posts
 
 <br/>
+
 # Modifications
 Wonder what is different from the original Hugo-Coder theme?
 
@@ -54,6 +53,7 @@ This theme:
 	- Descriptions shown when in list-view
 
 <br/>
+
 # Need help?
 Documentation can be found under the [```docs```](https://github.com/TanishkThoria/Hugo-Programmer/tree/main/docs) folder.
 
@@ -62,8 +62,10 @@ Feature requests and issues can be reported through [Github's Issues](https://gi
 Further questions can be email to me at tanishkthoria@gmail.com 
 
 <br/>
+
 # Licensing
 This theme, as well as the theme is forked from, is licensed under the [MIT License](https://github.com/TanishkThoria/Hugo-Programmer/blob/main/LICENSE)
 
 <br/>
+
 # Have a great day :)
