@@ -1,4 +1,7 @@
 # Hugo-Programmer
+![](/images/screenshot.png)
+
+
 A sleek and minimal theme for [Hugo](https://gohugo.io).
 <br/>
 *This theme is a modified version of the [Hugo Coder](https://themes.gohugo.io/themes/hugo-coder/) theme.*
