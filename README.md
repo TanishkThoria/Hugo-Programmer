@@ -7,7 +7,11 @@
     <img src="https://img.shields.io/github/last-commit/tanishkthoria/hugo-programmer?style=for-the-badge" alt="Github Commits"> 
   </a> 
 
-   <a align="right" href="https://github.com/TanishkThoria/Hugo-Programmer/blob/main/LICENSE">
+  <style>
+    a{text-align: right;}
+  </style>
+
+  <a href="https://github.com/TanishkThoria/Hugo-Programmer/blob/main/LICENSE">
     <img src="https://img.shields.io/github/license/tanishkthoria/hugo-programmer" alt="MIT License Badge">
   </a>
 </p>
