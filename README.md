@@ -8,7 +8,7 @@ Can't decide if you like it or not? You can find a [live demo](https://tanishkth
 <br/>
 If you like what you see or are looking for what to do next, you can find the [```source code```](https://github.com/TanishkThoria/Personal-Website) of this demo.
 
-# How to get started
+# Using the Theme
 1) This theme should be added as a submodule in your themes directory:
   ```
   git submodule add https://github.com/TanishkThoria/Hugo-Programmer.git themes/Hugo-Programmer
@@ -55,7 +55,7 @@ This theme:
 <br/>
 
 # Need help?
-Documentation can be found under the [```docs```](https://github.com/TanishkThoria/Hugo-Programmer/tree/main/docs) folder.
+Documentation can be found under the [```docs```](https://github.com/TanishkThoria/Hugo-Programmer/tree/main/docs/home.md) folder.
 
 Feature requests and issues can be reported through [Github's Issues](https://github.com/TanishkThoria/Hugo-Programmer/issues)
 
