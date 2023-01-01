@@ -11,20 +11,18 @@ Can't decide if you like it or not? You can find a [live demo](https://tanishkth
   git submodule add https://github.com/TanishkThoria/Hugo-Programmer.git themes/Hugo-Programmer
   ```
 
-2) Edit your config.toml file to match the new theme. You can either do this by:
-- Simply adding 
-  ```
-  theme = "Hugo-Programmer"
-  ```
-  and then adding other parameters seperately.
-- Or by copying this [baseline configuration]() and filling it out.
-  **This is the recommended option due to it having the most reability**
 
-- Or by copying and editing the [example website](https://github.com/TanishkThoria/Personal-Website/blob/main/config.toml).
-  *Note that some of the images in the example website may not load properly in your website due to them being relatve links.*
-  *This could be fixed by either locally downloading the same images or adding*
-  ```https://tanishkthoria.netlify.app/```
-  *in front of all relative links.*
+2) Edit your ```config.toml``` file to match the new theme. You can either do this by:
+  - Simply adding  ```theme = "Hugo-Programmer"```at the top of the file and then adding other parameters seperately.
+
+  - Or by copying this [baseline configuration]() and filling it out.
+    **This is the recommended option due to it having the most reability**
+
+  - Or by copying and editing the [example website](https://github.com/TanishkThoria/Personal-Website/blob/main/config.toml).
+    *Note that some of the images in the example website may not load properly in your website due to them being relatve links.*
+    *This could be fixed by either locally downloading the same images or adding*
+    ```https://tanishkthoria.netlify.app/```
+    *in front of all relative links.*
 
 3) You should be good to go! To display the current version of the website *including drafts** you can do 
   ```
