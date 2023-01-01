@@ -155,13 +155,30 @@ These are all the parameters used by `hugo-coder` theme.
 
 Social Icons are optional. To use them you will need to set at least all the following required parameters for each icon.
 
-| Configuration  | Type   | Required | Description                              | Example                         | 
-| -------------- | ------ | -------- | ---------------------------------------- | ------------------------------- |
-| name           | string | Yes      | Icon name.                               | `"Github"`                      |
-| icon           | string | Yes      | ForkAwesome icon classes.                | `"fa fa-github"`                |
-| weight         | int    | Yes      | Icon order.                              | `1`                             |
-| url            | string | Yes      | URL to redirect.                         | `"https://github.com/johndoe/"` |
+| Configuration  | Type   | Required | Description                              | Example                             | 
+| -------------- | ------ | -------- | ---------------------------------------- | -------------------------------     |
+| name           | string | Yes      | Icon name.                               | `"Github"`                          |
+| icon           | string | Yes      | ForkAwesome icon classes.                | `"fa fa-github"` [See supported icons](https://forkaweso.me/Fork-Awesome/icons/) |
+| weight         | int    | Yes      | Icon order.                              | `1`                                 |
+| url            | string | Yes      | URL to redirect.                         | `"https://github.com/johndoe/"`     |
 
+If you want to use a custom image, or did not find what you were looking for in Fork Awesome, you can use the following configuration.
+
+| Configuration         | Type   | Required | Description                                        | Example                                |
+| --------------------- | ------ | -------- | -------------------------------------------------- | -------------------------------------- |
+| name                  | string | Yes      | Icon name.                                         | `"Github"`                             |
+| customImg             | bool   | Yes      | Parameter needs to be true if using a custom icon. | `true`                                 |
+| weight                | int    | Yes      | Icon order.                                        | `1`                                    |
+| url                   | string | Yes      | URL to redirect.                                   | `"https://github.com/johndoe/"`        |
+| imgSrcDarkMode        | string | Yes      | Link to the custom image for homepage (dark mode)  | `"https://example.com/exampleImg.png"` |
+| imgSrcLightMode       | string | Yes      | Link to the custom image for homepage (light mode) | `"https://example.com/exampleImg.png"` |
+| footerImgSrcDarkMode  | string | Yes      | Link to the custom image for footer (dark mode)    | `"https://example.com/exampleImg.png"` |
+| footerImgSrcLightMode | string | Yes      | Link to the custom image for footer (light mode)   | `"https://example.com/exampleImg.png"` |
+| imgWidth              | int    | Yes      | Image width (homepage)                             | `50`                                   |
+| imgHeight             | int    | Yes      | Image height (homepage)                            | `50`                                   |
+| footerImgWidth        | int    | Yes      | Image width (footer)                               | `20`                                   |
+| footerImgHeight       | int    | Yes      | Image height (footer)                              | `20`                                   |
+ 
 An example:
 
 ```toml
@@ -180,6 +197,21 @@ An example:
   icon = "fa fa-twitter fa-2x"
   weight = 3
   url = "https://twitter.com/johndoe/"
+[[params.social]]
+  name = "Hacker Rank"
+  weight = 3
+  url = "https://www.hackerrank.com/tanishkthoria"
+
+  customImg = true
+  imgSrcDarkMode = "https://tanishkthoria.netlify.app/images/hackerrankLogoV3.png"
+  imgSrcLightMode = "https://tanishkthoria.netlify.app/images/hackerrankLogoLightModeV3.png"
+  imgWidth = 75
+  imgHeight = 75
+
+  footerImgSrcDarkMode = "https://tanishkthoria.netlify.app/images/hackerrankLogoBlueV3.png"
+  footerImgSrcLightMode = "https://tanishkthoria.netlify.app/images/hackerrankLogoBlueLightModeV3.png"
+  footerImgWidth = 36
+  footerImgHeight = 36
 ```
 
 ### Menu Items Configurations
