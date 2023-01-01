@@ -19,7 +19,7 @@ Can't decide if you like it or not? You can find a [live demo](https://tanishkth
     **This is the recommended option due to it having the most reability**
 
   - Or by copying and editing the [example website](https://github.com/TanishkThoria/Personal-Website/blob/main/config.toml).
-    *Note that some of the images in the example website may not load properly in your website due to them being relatve links.*
+    *Note that some of the images in the example website may not load properly in your website due to them being relative links.*
     *This could be fixed by either locally downloading the same images or adding*
     ```https://tanishkthoria.netlify.app/```
     *in front of all relative links.*
