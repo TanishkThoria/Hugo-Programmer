@@ -3,7 +3,7 @@
 <p> 
   <h1>Hugo-Programmer</h1> 
 
-  <a1 href="https://github.com/TanishkThoria/Hugo-Programmer/commits/main"> 
+  <a href="https://github.com/TanishkThoria/Hugo-Programmer/commits/main"> 
     <img src="https://img.shields.io/github/last-commit/tanishkthoria/hugo-programmer?style=for-the-badge" alt="Github Commits"> 
   </a> 
 
