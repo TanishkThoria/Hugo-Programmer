@@ -30,7 +30,7 @@ Can't decide if you like it or not? You can find a [live demo](https://tanishkth
   ```
   or just ```hugo server``` if you do not want to display drafts (This is how the website would look like if published).
 
-  the resulting site will be displayed at ``` http://localhost:1313/```
+  the resulting site will be displayed at ```http://localhost:1313/```
 
   *drafts of blog posts
 
@@ -46,7 +46,7 @@ This theme:
 	- Descriptions shown when in list-view
 
 # Need help?
-Documentation can be found under the ``` [docs](https://github.com/TanishkThoria/Hugo-Programmer/tree/main/docs )``` folder.
+Documentation can be found under the ```[docs](https://github.com/TanishkThoria/Hugo-Programmer/tree/main/docs)``` folder.
 
 Feature requests and issues can be reported through [Github's Issues](https://github.com/TanishkThoria/Hugo-Programmer/issues)
 
