@@ -18,7 +18,7 @@
 
 # 
 
-![](/images/screenshot.png)
+![](images/screenshot.png)
 
 A sleek and minimal theme for [Hugo](https://gohugo.io).
 <br/>
