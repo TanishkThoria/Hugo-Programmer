@@ -1,4 +1,4 @@
-<p align="right"> <pre ><h1>Hugo-Programmer</h1> </pre> <h1 href="https://github.com/TanishkThoria/Hugo-Programmer/commits/main"> <img src="https://img.shields.io/github/last-commit/tanishkthoria/hugo-programmer?style=for-the-badge" alt="Github Commits"> </h1> </p>
+<p> <pre><h1>Hugo-Programmer    </h1> </pre> <h1 href="https://github.com/TanishkThoria/Hugo-Programmer/commits/main"> <img src="https://img.shields.io/github/last-commit/tanishkthoria/hugo-programmer?style=for-the-badge" alt="Github Commits"> </h1> </p>
 <p align="right">
   <a href="https://github.com/TanishkThoria/Hugo-Programmer/blob/main/LICENSE">
     <img src="https://img.shields.io/github/license/tanishkthoria/hugo-programmer" alt="MIT License Badge">
