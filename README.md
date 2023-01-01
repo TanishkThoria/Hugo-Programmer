@@ -4,7 +4,8 @@
     <img src="https://img.shields.io/github/license/tanishkthoria/hugo-programmer" alt="MIT License Badge">
   </a>
   
-  <img src="https://img.shields.io/github/stars/tanishkthoria/hugo-programmer?style=social">
+  <img src="https://img.shields.io/github/last-commit/tanishkthoria/hugo-programmer">
+  <img src="https://img.shields.io/github/contributors/tanishkthoria/hugo-programmer">
 </p>
 
 ![](/images/screenshot.png)
