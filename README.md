@@ -1,7 +1,6 @@
 # Hugo-Programmer
 ![](/images/screenshot.png)
 
-
 A sleek and minimal theme for [Hugo](https://gohugo.io).
 <br/>
 *This theme is a modified version of the [Hugo Coder](https://themes.gohugo.io/themes/hugo-coder/) theme.*
@@ -22,8 +21,8 @@ If you like what you see or are looking for what to do next, you can find the [`
 
   - Simply adding  ```theme = "Hugo-Programmer"``` at the top of the file and then adding other parameters seperately.
 
-  - Or by copying this [baseline configuration]() and filling it out. <br/>
-    **This is the recommended option due to it having the most reability**
+  - Or by copying this [baseline configuration](https://github.com/TanishkThoria/Hugo-Programmer/blob/main/docs/configurations.md#complete-example) and filling it out. <br/>
+    **This is the recommended option due to being mostly filled out**
 
   - Or by copying and editing the [example website](https://github.com/TanishkThoria/Personal-Website/blob/main/config.toml). <br/>
     *Note that some of the images in the example website may not load properly in your website due to them being relative links.*
