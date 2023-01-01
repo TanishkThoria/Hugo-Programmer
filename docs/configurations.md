@@ -289,13 +289,13 @@ An example:
 This is a complete configuration example with some recommended values.
 
 ```toml
-baseurl = "http://www.example.com" # Your website link goes here
-title = "johndoe" # Title shown in top left of site
-theme = "Hugo-Programmer"
-languagecode = "en"
-defaultcontentlanguage = "en"
+baseurl = "http://www.example.com" # Your website link
+title = "johndoe" 
+theme = "Hugo-Programmer" 
+languagecode = "en" 
+defaultcontentlanguage = "en" 
 
-paginate = 20
+paginate = 20 
 
 pygmentsstyle = "bw"
 pygmentscodefences = true
@@ -353,7 +353,7 @@ disqusShortname = "yourdiscussshortname"
   name = "Blog"
   weight = 1
   url  = "posts/"
-[[menu.main]]d
+[[menu.main]]
   name = "About"
   weight = 2
   url = "about/"
