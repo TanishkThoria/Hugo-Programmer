@@ -4,6 +4,7 @@ A sleek and minimal theme for [Hugo](https://gohugo.io).
 
 # Example Site
 Can't decide if you like it or not? You can find a [live demo](https://tanishkthoria.netlify.app) of this theme. 
+If you like what you see or are looking for what to do next, you can find the [```source code```](https://github.com/TanishkThoria/Personal-Website) of this demo.
 
 # How to get started
 1) This theme should be added as a submodule in your themes directory:
