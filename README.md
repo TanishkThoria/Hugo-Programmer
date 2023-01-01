@@ -13,7 +13,7 @@ Can't decide if you like it or not? You can find a [live demo](https://tanishkth
 
 
 2) Edit your ```config.toml``` file to match the new theme. You can either do this by:
-  - Simply adding  ```theme = "Hugo-Programmer"```at the top of the file and then adding other parameters seperately.
+  - Simply adding  ```theme = "Hugo-Programmer"``` at the top of the file and then adding other parameters seperately.
 
   - Or by copying this [baseline configuration]() and filling it out.
     **This is the recommended option due to it having the most reability**
@@ -24,20 +24,13 @@ Can't decide if you like it or not? You can find a [live demo](https://tanishkth
     ```https://tanishkthoria.netlify.app/```
     *in front of all relative links.*
 
-3) You should be good to go! To display the current version of the website *including drafts** you can do 
+3) You should be good to go! To display the current version of the website *including drafts**, execute the following command:
   ```
   hugo server -D
   ```
-  or just
-  ```
-  hugo server
-  ```
-  if you do not want to display drafts.
+  or just ```hugo server``` if you do not want to display drafts (This is how the website would look like if published).
 
-  the resulting site will be display at
-  ```
-  http://localhost:1313/
-  ```
+  the resulting site will be displayed at ``` http://localhost:1313/```
 
   *drafts of blog posts
 
@@ -53,9 +46,7 @@ This theme:
 	- Descriptions shown when in list-view
 
 # Need help?
-Documentation can be found under the 
-```[docs](https://github.com/TanishkThoria/Hugo-Programmer/tree/main/docs)```
-folder.
+Documentation can be found under the ``` [docs](https://github.com/TanishkThoria/Hugo-Programmer/tree/main/docs )``` folder.
 
 Feature requests and issues can be reported through [Github's Issues](https://github.com/TanishkThoria/Hugo-Programmer/issues)
 
