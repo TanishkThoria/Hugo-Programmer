@@ -1,23 +1,34 @@
 # Quick Start
 
-To start using `hugo-coder`:
+To start using `Hugo-Programmer`:
 
-1. Add the repository into your Hugo Project repository as a submodule, `git submodule add https://github.com/luizdepra/hugo-coder.git themes/coder`.
-2. Configure your `config.toml`. You can use [this minimal configuration](https://github.com/luizdepra/hugo-coder/blob/main/docs/configurations.md#complete-example) as a base. The [`config.toml`](https://github.com/luizdepra/hugo-coder/blob/master/exampleSite/config.toml) inside the [exampleSite](https://github.com/luizdepra/hugo-coder/tree/master/exampleSite) from the `exampleSite` is also a good reference.
-3. Build your site with `hugo serve` and see the result at `http://localhost:1313/`.
+1) This theme should be added as a submodule in your themes directory:
+  ```
+  git submodule add https://github.com/TanishkThoria/Hugo-Programmer.git themes/Hugo-Programmer
+  ```
+<br/>
 
-If you just want to test this theme, go to [this page](https://themes.gohugo.io/theme/hugo-coder/).
+2) Edit your ```config.toml``` file to match the new theme. You can do this by:
 
-You can also clone or download it, then run these commands:
+  - Simply adding  ```theme = "Hugo-Programmer"``` at the top of the file and then adding other parameters seperately.
 
-```
-git clone https://github.com/luizdepra/hugo-coder.git
+  - Or by copying this [baseline configuration](https://github.com/TanishkThoria/Hugo-Programmer/blob/main/docs/configurations.md#complete-example) and filling it out. <br/>
+    **This is the recommended option due to being mostly filled out**
 
-cd hugo-coder
+  - Or by copying and editing the [example website](https://github.com/TanishkThoria/Personal-Website/blob/main/config.toml). <br/>
+    *Note that some of the images in the example website may not load properly in your website due to them being relative links.*
+    *This could be fixed by either locally downloading the same images or adding*
+    ```https://tanishkthoria.netlify.app/```
+    *in front of all relative links.*
 
-make demo
-```
 
-You'll see the result at [http://localhost:1313/](http://localhost:1313/).
+3) You should be good to go! To display the current version of the website *including drafts**, execute the following command:
+  ```
+  hugo server -D
+  ```
+  or just ```hugo server``` if you do not want to display drafts (This is how the website would look like if published).
 
-> These last two methods don't use the same content directory, the first one leads to 404 pages for some pages. More info [here](https://github.com/gohugoio/hugoThemes#adding-a-theme-to-the-list).
+  The resulting site will be displayed at ```http://localhost:1313/```
+
+  *drafts of blog posts
+

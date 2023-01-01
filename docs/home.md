@@ -1,4 +1,4 @@
-# Welcome to the hugo-coder docs!
+# Welcome to the Hugo-Programmer docs!
 
 ## Basic Usage
 
