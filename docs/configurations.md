@@ -125,7 +125,7 @@ Follow [these steps](https://gohugo.io/content-management/comments/#configure-di
 
 ## Theme Parameters
 
-These are all the parameters used by `hugo-coder` theme.
+These are all the parameters used by `Hugo-Programmer` theme.
 
 | Name                          | Type   | Required | Description                                      | Default                          | Example                                          |
 | ----------------------------- | ------ | -------- | ------------------------------------------------ | -------------------------------- | ------------------------------------------------ |
@@ -153,7 +153,7 @@ These are all the parameters used by `hugo-coder` theme.
 
 ### Social Icons Configuration
 
-Social Icons are optional. To use them you will need to set at least all the following required parameters for each icon.
+Social Icons are optional. To use them you will need to set at the following required parameters for each icon.
 
 | Configuration  | Type   | Required | Description                              | Example                             | 
 | -------------- | ------ | -------- | ---------------------------------------- | -------------------------------     |
@@ -162,7 +162,7 @@ Social Icons are optional. To use them you will need to set at least all the fol
 | weight         | int    | Yes      | Icon order.                              | `1`                                 |
 | url            | string | Yes      | URL to redirect.                         | `"https://github.com/johndoe/"`     |
 
-If you want to use a custom image, or did not find what you were looking for in Fork Awesome, you can use the following configuration.
+If you want to use a custom image, or did not find what you were looking for in Fork Awesome, you can use the following configurations.
 
 | Configuration         | Type   | Required | Description                                        | Example                                |
 | --------------------- | ------ | -------- | -------------------------------------------------- | -------------------------------------- |
@@ -289,9 +289,9 @@ An example:
 This is a complete configuration example with some recommended values.
 
 ```toml
-baseurl = "http://www.example.com"
-title = "johndoe"
-theme = "hugo-coder"
+baseurl = "http://www.example.com" # Your website link goes here
+title = "johndoe" # Title shown in top left of site
+theme = "Hugo-Programmer"
 languagecode = "en"
 defaultcontentlanguage = "en"
 
@@ -353,7 +353,7 @@ disqusShortname = "yourdiscussshortname"
   name = "Blog"
   weight = 1
   url  = "posts/"
-[[menu.main]]
+[[menu.main]]d
   name = "About"
   weight = 2
   url = "about/"
@@ -369,7 +369,7 @@ This theme includes one content type:
 
 ### Posts
 
-These are the front matter variables used by `hugo-coder` theme.
+These are the front matter variables used by `Hugo-Programmer` theme.
 
 | Name             | Type   | Required | Description                                        | Default | Example                                                                       |
 | ---------------- | ------ | -------- | -------------------------------------------------- | ------- | ----------------------------------------------------------------------------- |
@@ -382,5 +382,9 @@ These are the front matter variables used by `hugo-coder` theme.
 | math             | bool   | No       | If true, MathJax is enabled only for this post.    | `false` | `true` or `false`                                                             |
 | katex            | bool   | No       | If true, katex is enabled only for this post.      | `false` | `true` or `false`                                                             |
 | disableComments  | bool   | No       | If true, comments are disabled.                    | `false` | `true` or `false`                                                             |
+| imageSrc         | string | No       | Link to a thumbnail image for the post             |         | `"https://example.com/exampleImg.png"`                                        |
+| image            | bool   | No       | If true, thumbnail image is shown                  | `false` | `true`                                                                        |
+| imageWidth       | int    | No       | Width of thumbnail image                           |         | `250`                                                                         |
+| imageHeight      | int    | No       | Height of thumbnail image                          |         | `140`                                                                         |
 
 > "tags", "categories", "series" and "authors" are taxonomies defined in the `config.toml` file.
