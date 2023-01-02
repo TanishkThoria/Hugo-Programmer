@@ -3,7 +3,7 @@
   <div>
 
     <p>
-      <span> {{ with .Params.categories }}{{ partial "taxonomy/categories.html" .}}{{ end }} </span>
+      <a> {{ with .Params.categories }}{{ partial "taxonomy/categories.html" .}}{{ end }} </a>
       <a href="{{ .Params.externalLink | default .RelPermalink }}"> <h1> {{ .Title }} </h1> </a>
     </p>  
 
