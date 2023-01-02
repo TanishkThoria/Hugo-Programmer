@@ -1,11 +1,11 @@
 <li>
 
-  <div>
+  <div class="off-black-background">
 
     <style>
-      .off-white-background {
+      .off-black-background {
         height:300px;
-        width:600px;
+        width:800px;
         background:url(http://getwallpapers.com/wallpaper/full/b/6/6/476537.jpg);
       }
     </style>
@@ -24,14 +24,12 @@
     <hr>
     
     {{ if .Params.image }}
-      <div class="off-white-background">
-        <img src="{{ .Params.imageSrc }}" alt="Article image" style="width:{{ .Params.imageWidth }}px; height:{{ .Params.imageHeight }}px">
-        <vr>
-        <p> {{ .Description }} </p>
-      </div>
+      <img src="{{ .Params.imageSrc }}" alt="Article image" style="width:{{ .Params.imageWidth }}px; height:{{ .Params.imageHeight }}px">
+      <vr>
+      <p> {{ .Description }} </p>
     
     {{ else }}
-      <p class="off-white-background"> {{ .Description }} </p>
+      <p> {{ .Description }} </p>
       
     {{ end }}
 
