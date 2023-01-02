@@ -3,7 +3,7 @@
   <div>
 
     <style>
-      .container {
+      .off-white-background {
         height:300px;
         width:600px;
         background:url(http://getwallpapers.com/wallpaper/full/b/6/6/476537.jpg);
@@ -24,14 +24,14 @@
     <hr>
     
     {{ if .Params.image }}
-      <div class="container">
+      <div class="off-white-background">
         <img src="{{ .Params.imageSrc }}" alt="Article image" style="width:{{ .Params.imageWidth }}px; height:{{ .Params.imageHeight }}px">
         <vr>
         <p> {{ .Description }} </p>
       </div>
     
     {{ else }}
-      <p class="container"> {{ .Description }} </p>
+      <p class="off-white-background"> {{ .Description }} </p>
       
     {{ end }}
 
