@@ -4,7 +4,6 @@
 
     <p>
       <span> {{ with .Params.categories }}{{ partial "taxonomy/categories.html" .}}{{ end }} </span>
-      <pre>     </pre>
       <a href="{{ .Params.externalLink | default .RelPermalink }}"> <h1> {{ .Title }} </h1> </a>
     </p>  
 
