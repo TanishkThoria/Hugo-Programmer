@@ -25,7 +25,9 @@
       
     {{ end }}
 
-    <span class="tag"> {{ with .Params.tags }}{{ partial "taxonomy/tags.html" .}}{{ end }} </span>
+    <div class="tags">
+      <span class="tag"> {{ with .Params.tags }}{{ partial "taxonomy/tags.html" .}}{{ end }} </span>
+    </div>
 
     <br>
 
