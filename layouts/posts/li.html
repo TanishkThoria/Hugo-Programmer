@@ -3,7 +3,9 @@
   <div>
 
     <p>
-      <a href="{{ .Params.externalLink | default .RelPermalink }}"> <h1> {{ .Title }} {{ with .Params.categories }}{{ partial "taxonomy/categories.html" .}}{{ end }} </h1> </a>
+      <span> {{ with .Params.categories }}{{ partial "taxonomy/categories.html" .}}{{ end }} </span>
+      <pre>     </pre>
+      <a href="{{ .Params.externalLink | default .RelPermalink }}"> <h1> {{ .Title }} </h1> </a>
     </p>  
 
     <span class="date">{{ .Date | time.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}</span>        
