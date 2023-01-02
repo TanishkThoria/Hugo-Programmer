@@ -8,8 +8,8 @@
 
       <a class="title" href="{{ .Params.externalLink | default .RelPermalink }}"> {{ .Title }} </a>
 
-      <a> &#8200; </a>
-      <a> {{ with .Params.categories }}{{ partial "taxonomy/categories.html" .}}{{ end }} </a>
+      <a> &#8200; &#8200; &#8200; &#8200; </a>
+      <span> {{ with .Params.categories }}{{ partial "taxonomy/categories.html" .}}{{ end }} </span>
 
     </p>  
  
