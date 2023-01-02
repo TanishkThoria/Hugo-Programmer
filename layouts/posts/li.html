@@ -2,6 +2,14 @@
 
   <div class="container">
 
+    <style>
+      .container {
+        height:300px;
+        width:600px;
+        background:url(http://getwallpapers.com/wallpaper/full/b/6/6/476537.jpg);
+      }
+    </style>
+
     <p>
 
       <span class="date">{{ .Date | time.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}</span>        
@@ -30,13 +38,5 @@
     <br>
 
   </div>
-
-<style>
-.container {
-height:346px;
-width:678px;
-background:url(http://i.stack.imgur.com/ZsWHu.png) no-repeat;
-}
-</style>
 
 </li>
