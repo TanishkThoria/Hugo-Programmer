@@ -72,9 +72,9 @@ This theme:
 	- Supports image thumbnails
 	- Categorizations shown when in list-view
 	- Descriptions shown when in list-view
-
+	- Tags shown when in list-view
 ## Currenly working on:
-- Modifying the posts page
+	- Modifying the posts page
 
 <br/>
 
