@@ -5,7 +5,7 @@
       <span class="separator">•</span>
     {{- end }}
     <span class="tag">
-      <a href="{{ ( printf "tags/%s/" ( . | urlize ) ) | relLangURL }}">{{ . }}</a>
+      <code> <a href="{{ ( printf "tags/%s/" ( . | urlize ) ) | relLangURL }}">{{ . }}</a> </code>
     </span>
   {{- end -}}
 </div>
