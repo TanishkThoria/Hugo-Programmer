@@ -1,6 +1,6 @@
 <li>
 
-  <div class="container">
+  <div>
 
     <style>
       .container {
@@ -24,12 +24,14 @@
     <hr>
     
     {{ if .Params.image }}
-      <img src="{{ .Params.imageSrc }}" alt="Article image" style="width:{{ .Params.imageWidth }}px; height:{{ .Params.imageHeight }}px">
-      <vr>
-      <p> {{ .Description }} </p>
+      <div class="container">
+        <img src="{{ .Params.imageSrc }}" alt="Article image" style="width:{{ .Params.imageWidth }}px; height:{{ .Params.imageHeight }}px">
+        <vr>
+        <p> {{ .Description }} </p>
+      </div>
     
     {{ else }}
-      <p> {{ .Description }} </p>
+      <p class="container"> {{ .Description }} </p>
       
     {{ end }}
 
