@@ -1,12 +1,40 @@
 <li>
 
-  <div class="tv">
+  <div class="tvshape">
 
     <style>
       .off-black-background {
         background-color: #455a64;
 	margin: 30px;
 	padding: 20px;
+      }
+
+      #tvshape {
+        position: relative;
+ 	width: 200px;
+ 	height: 150px;
+ 	margin: 20px 10px;
+ 	background: #455a64;
+ 	border-radius: 50% / 10%;
+ 	color: white;
+ 	text-align: center;
+ 	text-indent: .1em;
+      }
+
+      #tvshape:before {
+        content: "";
+ 	position: absolute;
+ 	top: 10%;
+ 	bottom: 10%;
+ 	right: -5%;
+ 	left: -5%;
+ 	background: inherit;
+ 	border-radius: 5% / 50%;
+      }
+
+      #tvshape img {
+        height:100%;
+        width:100%;
       }
     </style>
 
