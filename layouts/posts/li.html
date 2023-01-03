@@ -38,15 +38,15 @@
     </style>
 
     <script> 
-      if ({{ .Site.Params.blogPost.sidebar }}) {
+      if ({{ .Site.Params.blogPost.sidebar }} == true) {
         const sidebar = document.getElementById("{{ .Title }}-sidebar");
 
         sidebar.className = "tvshape";
-        sidebar.style.background = #{{ .Site.Params.blogPost.sidebarColor}};
+        sidebar.style.background = {{ .Site.Params.blogPost.sidebarColor}};
       }
   
 
-      if ({{ .Site.Params.blogPost.fill }}) {
+      if ({{ .Site.Params.blogPost.fill }} == true) {
         getTheme = window.localStorage && window.localStorage.getItem("colorscheme");
         getTheme = getTheme == null ? '{{$.Site.Params.utterances.theme}}' : getTheme;              
 
@@ -54,10 +54,10 @@
 
         if (getTheme == "light") {
           fill.className = "light-mode-background" ;
-	  fill.background-color = #{{ .Site.Params.blogPost.fillDarkMode}};
+	  fill.background-color = {{ .Site.Params.blogPost.fillDarkMode}};
         } else {
 	  fill.className = "dark-mode-background" ;
-	  fill.background-color = #{{ .Site.Params.blogPost.fillLightMode}};
+	  fill.background-color = {{ .Site.Params.blogPost.fillLightMode}};
         }
       }
     </script>
