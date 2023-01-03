@@ -38,7 +38,7 @@
     </style>
 
     <script> 
-      if ({{ .Site.Params.blogPost.sidebar }} == true) {
+      if ({{ .Site.Params.blogPost.sidebar }} == "true") {
         const sidebar = document.getElementById("{{ .Title }}-sidebar");
 
         sidebar.className = "tvshape";
@@ -46,7 +46,7 @@
       }
   
 
-      if ({{ .Site.Params.blogPost.fill }} == true) {
+      if ({{ .Site.Params.blogPost.fill }} == "true") {
         getTheme = window.localStorage && window.localStorage.getItem("colorscheme");
         getTheme = getTheme == null ? '{{$.Site.Params.utterances.theme}}' : getTheme;              
 
