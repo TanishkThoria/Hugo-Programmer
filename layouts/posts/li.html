@@ -66,12 +66,10 @@
     {{ if .Params.image }}
       <img src="{{ .Params.imageSrc }}" alt="Article image" style="width:{{ .Params.imageWidth }}px; height:{{ .Params.imageHeight }}px">
       <vr>
-      <p> &#8200; &#8200; &#8200; &#8200; {{ .Description }} </p>
-    
-    {{ else }}
-      <p> &#8200; &#8200; &#8200; &#8200; {{ .Description }} </p>
-      
+          
     {{ end }}
+
+    <p> &#8200; &#8200; &#8200; &#8200; {{ .Description | markdownify }} </p>
 
     <span class="tag"> {{ with .Params.tags }}{{ partial "taxonomy/tags.html" .}}{{ end }} </span>
 
