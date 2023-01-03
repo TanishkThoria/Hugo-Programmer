@@ -6,13 +6,13 @@
     <style>
       .dark-blue-background {
         background-color: #26373C;
-	margin: -15px;
+	margin: -30px;
 	padding: 20px;
       }
       
      .light-blue-background {
        background-color: #8BBDCA;
-       margin: -15px;
+       margin: -30px;
        padding: 20px;
      }
 
@@ -40,6 +40,7 @@
     </style>
 
     <script> 
+      <!--
       getTheme = window.localStorage && window.localStorage.getItem("colorscheme");
       getTheme = getTheme == null ? '{{$.Site.Params.utterances.theme}}' : getTheme;              
 
@@ -47,7 +48,9 @@
         document.getElementById("{{ .Title }}-post").className = "light-blue-background" ;
       } else {
 	document.getElementById("{{ .Title }}-post").className = "dark-blue-background" ;
-      }
+      } -->
+
+      document.getElementById("{{ .Title }}-post").className = "tvshape" ;
     </script>
 
     <p>
