@@ -1,6 +1,7 @@
 <li>
 
   <div id="{{ .Title }}-sidebar"></div>
+  <h1 id="test"></h1>  
 
   <div id="{{ .Title }}-post">
 
@@ -39,6 +40,7 @@
 
     <script> 
       if ({{ .Site.Params.blogPost.sidebar }} == "true") {
+	document.getElementById("test").innerHTML = "Inside if statement!";
         const sidebar = document.getElementById("{{ .Title }}-sidebar");
 
         sidebar.className = "tvshape";
