@@ -1,7 +1,7 @@
 <li>
 
   <div class="tvshape"></div>
-  <div class="dark-blue-background">
+  <div id="post">
 
     <style>
       .dark-blue-background {
@@ -9,6 +9,12 @@
 	margin: 30px;
 	padding: 20px;
       }
+      
+     .light-blue-background {
+       background-color: #8BBDCA;
+       margin: 30px;
+       padding: 20px;
+     }
 
       .tvshape {
         position: relative;
@@ -29,9 +35,20 @@
  	right: -5%;
  	left: -5%;
  	border-radius: 5% / 50%;
-      }
+      }     	     
 
     </style>
+
+    <script> 
+      getTheme = window.localStorage && window.localStorage.getItem("colorscheme");
+      getTheme = getTheme == null ? '{{$.Site.Params.utterances.theme}}' : getTheme;              
+
+      if (getTheme == "light") {
+        document.getElementById("post").className = "light-blue-background" ;
+      } else {
+	document.getElementById("post").className = "dark-blue-background" ;
+      }
+    </script>
 
     <p>
 		
