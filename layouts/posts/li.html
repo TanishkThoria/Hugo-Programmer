@@ -1,7 +1,7 @@
 <li>
 
   <div class="tvshape"></div>
-  <div id="post">
+  <div id="{{ .Title }}-post">
 
     <style>
       .dark-blue-background {
@@ -44,9 +44,9 @@
       getTheme = getTheme == null ? '{{$.Site.Params.utterances.theme}}' : getTheme;              
 
       if (getTheme == "light") {
-        document.getElementById("post").className = "light-blue-background" ;
+        document.getElementById("{{ .Title }}-post").className = "light-blue-background" ;
       } else {
-	document.getElementById("post").className = "dark-blue-background" ;
+	document.getElementById("{{ .Title }}-post").className = "dark-blue-background" ;
       }
     </script>
 
