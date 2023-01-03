@@ -1,18 +1,18 @@
 <li>
 
   <div class="tvshape"></div>
-  <div id="{{ .Title }}-post">
+  <div id="{{ .Title }}-post" class="tvshape">
 
     <style>
       .dark-blue-background {
         background-color: #26373C;
-	margin: 1px;
+	margin: 30px;
 	padding: 20px;
       }
       
      .light-blue-background {
        background-color: #8BBDCA;
-       margin: 1px;
+       margin: 30px;
        padding: 20px;
      }
 
@@ -50,7 +50,7 @@
 	document.getElementById("{{ .Title }}-post").className = "dark-blue-background" ;
       } -->
 
-      document.getElementById("{{ .Title }}-post").className = "tvshape" ;
+      <!-- document.getElementById("{{ .Title }}-post").className = "tvshape" ;-->
     </script>
 
     <p>
