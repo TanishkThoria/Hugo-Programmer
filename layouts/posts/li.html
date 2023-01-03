@@ -1,21 +1,16 @@
 <li>
 
-  <div class="tvshape"></div>
+  <div id="{{ .Title }}-sidebar"></div>
+
   <div id="{{ .Title }}-post">
 
     <style>
-      .relative-position {
-        position: relative;
-      }
-
-      .dark-blue-background {
-        background-color: #26373C;
+      .dark-mode-background {
 	margin: 30px;
 	padding: 20px;
       }
       
-     .light-blue-background {
-       background-color: #8BBDCA;
+     .light-mode-background {
        margin: 30px;
        padding: 20px;
      }
@@ -44,13 +39,26 @@
     </style>
 
     <script> 
-      getTheme = window.localStorage && window.localStorage.getItem("colorscheme");
-      getTheme = getTheme == null ? '{{$.Site.Params.utterances.theme}}' : getTheme;              
+      if ({{ .Site.Params.blogPostSidebar}}) {
+        document.getElementById("{{ .Title }}-sidebar").className = "tvshape";
+        const sidebar = document.getElementById("{{ .Title }}-sidebar");
+        sidebar.style.background = {{ .Site.Params.blogPostSidebarColor}};
+      }
+  
 
-      if (getTheme == "light") {
-        document.getElementById("{{ .Title }}-post").className = "light-blue-background" ;
-      } else {
-	document.getElementById("{{ .Title }}-post").className = "dark-blue-background" ;
+      if ({{ .Site.Params.blogPostFill}}) {
+        getTheme = window.localStorage && window.localStorage.getItem("colorscheme");
+        getTheme = getTheme == null ? '{{$.Site.Params.utterances.theme}}' : getTheme;              
+
+        const fill = document.getElementById("{{ .Title }}-post");
+
+        if (getTheme == "light") {
+          fill.className = "light-mode-background" ;
+	  fill.background-color = {{ .Site.Params.blogPostFillDarkMode}};
+        } else {
+	  fill.className = "dark-mode-background" ;
+	  fill.background-color = {{ .Site.Params.blogPostFillLightMode}};
+        }
       }
     </script>
 
