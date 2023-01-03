@@ -22,7 +22,7 @@
       }
 
       .tvshape:before {
-	content: '{{ partialCached "li_refer.html" .}}';
+	content: '{{ .Render "li_refer.html" .}}';
  	position: absolute;
  	top: 10%;
  	bottom: 10%;
