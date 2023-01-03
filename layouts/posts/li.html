@@ -21,7 +21,22 @@
       }
 
       .tvshape:before {
-	content: '
+	content: '';
+ 	position: absolute;
+ 	top: 10%;
+ 	bottom: 10%;
+ 	right: -5%;
+ 	left: -5%;
+ 	background: inherit;
+ 	border-radius: 5% / 50%;
+      }
+
+      .tvshape img {
+        height:100%;
+        width:100%;
+      }
+    </style>
+
     <p>
 		
       <span class="date">{{ .Date | time.Format (.Site.Params.dateFormat | default "January 2, 2006" ) }}</span>        
@@ -47,22 +62,7 @@
 
     <span class="tag"> {{ with .Params.tags }}{{ partial "taxonomy/tags.html" .}}{{ end }} </span>
 
-    <br>';
- 	position: absolute;
- 	top: 10%;
- 	bottom: 10%;
- 	right: -5%;
- 	left: -5%;
- 	background: inherit;
- 	border-radius: 5% / 50%;
-      }
-
-      .tvshape img {
-        height:100%;
-        width:100%;
-      }
-    </style>
-
+    <br>
 
   </div>
 
