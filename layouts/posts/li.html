@@ -1,9 +1,13 @@
-<li>
+<li class="relative-position">
 
   <div class="tvshape"></div>
   <div id="{{ .Title }}-post" class="tvshape">
 
     <style>
+      .relative-position {
+        position: relative;
+      }
+
       .dark-blue-background {
         background-color: #26373C;
 	margin: 30px;
@@ -29,7 +33,7 @@
 
       .tvshape:before {
 	content: "";
- 	position: relative;
+ 	position: absolute;
  	top: 10%;
  	bottom: 10%;
  	right: -5%;
