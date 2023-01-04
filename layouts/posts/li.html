@@ -67,7 +67,7 @@
 
 
   <script> 
-    window.onload = function(){
+    window.addEventListener('DOMContentReady',function(){
       document.getElementById("test").innerHTML = "{{ .Site.Params.blogPost.sidebar }}";
 
       if ({{ .Site.Params.blogPost.sidebar }} == "true") {
@@ -90,7 +90,7 @@
           fill.background-color = {{ .Site.Params.blogPost.fillLightMode}};
         }
       }
-    }
+    };
   </script>
 
 
