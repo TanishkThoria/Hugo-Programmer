@@ -71,10 +71,8 @@
       document.getElementById("test").innerHTML = "{{ .Site.Params.blogPost.sidebar }}";
 
       if ({{ .Site.Params.blogPost.sidebar }} == "true") {
-        const sidebar = document.getElementById("{{ .Title }}-sidebar");
-
-        sidebar.className = "tvshape";
-        sidebar.style.background = {{ .Site.Params.blogPost.sidebarColor}};
+         document.getElementById("{{ .Title }}-sidebar").className = "tvshape";
+         document.getElementById("{{ .Title }}-sidebar").style.background = {{ .Site.Params.blogPost.sidebarColor}};
       }
   
 
