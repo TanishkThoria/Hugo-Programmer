@@ -20,25 +20,37 @@
 
 ![](images/screenshot.png)
 
-A sleek and minimal theme for [Hugo](https://gohugo.io).
+A sleek and minimal theme for [Hugo](https://gohugo.io), an efficient and easy to use tool for creating websites.
 <br/>
 *This theme is a modified version of the [Hugo Coder](https://themes.gohugo.io/themes/hugo-coder/) theme.*
 
 # Example Site
 Can't decide if you like it or not? You can find a [live demo](https://tanishkthoria.netlify.app) of this theme. 
 <br/>
-If you like what you see or are looking for what to do next, you can find the [```source code```](https://github.com/TanishkThoria/Personal-Website) of this demo.
+If you like what you see or are looking for what to do next, you can find the [`source code`](https://github.com/TanishkThoria/Personal-Website) of this demo.
 
-# Using the Theme
+# Starting from scratch
+If you are are starting a new website from scratch, there are a couple commands you will have to do before you can add the theme.
+
+1) First, we will need to create a new site with hugo.
+```hugo new site quickstart```
+2) Now, we will need to navigate into the new site that we just created.
+```cd quickstart```
+3) Next, we will initialize an empty git repository
+```git init```
+
+Now you can continue with the next steps in the [Adding the Theme](#adding-the-theme) portion
+
+# Adding the Theme
 1) This theme should be added as a submodule in your themes directory:
   ```
   git submodule add https://github.com/TanishkThoria/Hugo-Programmer.git themes/Hugo-Programmer
   ```
 <br/>
 
-2) Edit your ```config.toml``` file to match the new theme. You can do this by:
+2) Edit your `config.toml` file to match the new theme. You can do this by:
 
-  - Simply adding  ```theme = "Hugo-Programmer"``` at the top of the file and then adding other parameters seperately.
+  - Simply adding  `theme = "Hugo-Programmer"` at the top of the file and then adding other parameters seperately.
 
   - Or by copying this [baseline configuration](https://github.com/TanishkThoria/Hugo-Programmer/blob/main/docs/configurations.md#complete-example) and filling it out. <br/>
     **This is the recommended option due to being mostly filled out**
@@ -54,9 +66,9 @@ If you like what you see or are looking for what to do next, you can find the [`
   ```
   hugo server -D
   ```
-  or just ```hugo server``` if you do not want to display drafts (This is how the website would look like if published).
+  or just `hugo server` if you do not want to display drafts (This is how the website would look like if published).
 
-  The resulting site will be displayed at ```http://localhost:1313/```
+  The resulting site will be displayed at `http://localhost:1313/`
 
   *drafts of blog posts
 
@@ -79,7 +91,7 @@ This theme:
 <br/>
 
 # Need help?
-Documentation can be found under the [```docs```](https://github.com/TanishkThoria/Hugo-Programmer/tree/main/docs/home.md) folder.
+Documentation can be found under the [`docs`](https://github.com/TanishkThoria/Hugo-Programmer/tree/main/docs/home.md) folder.
 
 Feature requests and issues can be reported through [Github's Issues](https://github.com/TanishkThoria/Hugo-Programmer/issues)
 
