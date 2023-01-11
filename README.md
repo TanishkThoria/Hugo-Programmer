@@ -32,12 +32,18 @@ If you like what you see or are looking for what to do next, you can find the [`
 # Starting from scratch
 If you are are starting a new website from scratch, there are a couple commands you will have to do before you can add the theme.
 
-1) First, we will need to create a new site with hugo. <br/>
-```hugo new site quickstart```
-2) Now, we will need to navigate into the new site that we just created. <br/>
-```cd quickstart```
-3) Next, we will initialize an empty git repository <br/>
-```git init```
+1) First, we will need to create a new site with hugo. 
+```
+hugo new site quickstart
+```
+2) Now, we will need to navigate into the new site that we just created.
+```
+cd quickstart
+```
+3) Next, we will initialize an empty git repository.
+```
+git init
+```
 
 Now you can continue with the next steps in the [adding the theme](#adding-the-theme) portion
 
