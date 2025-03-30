@@ -31,7 +31,7 @@
   </script>
   {{ end }}
 
-  {{ if .Site.IsServer }}
+  {{ if eq hugo.Environment "development" }}
   {{ $script := resources.Get "js/coder.js" }}
   <script src="{{ $script.RelPermalink }}"></script>
   {{ else }}
@@ -40,7 +40,7 @@
   {{ end }}
 
   {{ range .Site.Params.customJS }}
-  {{ if $.Site.IsServer }}
+  {{ if eq hugo.Environment "development" }}
   {{ $script := resources.Get . }}
   <script src="{{ $script.RelPermalink }}"></script>
   {{ else }}
